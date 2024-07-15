@@ -1,0 +1,37 @@
+.map {
+  margin-top: -100px;
+  padding: 100px 20px 20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.mapa {
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.title-direction {
+  font-size: 15px;
+}
+
+/* Hasta 1024px */
+@media (max-width: 1024px) {
+  .map {
+    margin-bottom: 50px;
+  }
+}
+
+/* Hasta 768px */
+@media (max-width: 768px) {
+  .map {
+    padding: 100px 0 0 0;
+  }
+
+  .mapa {
+    width: 90%;
+    height: 300px;
+  }
+}

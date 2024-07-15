@@ -1,0 +1,100 @@
+.asistance {
+  background-image: url("../img/fondo_nav_mobile_1.png");
+  padding: 20px;
+  border-radius: 7px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.asistance-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-group,
+.comments-group {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 15px;
+}
+
+.asistance-form input,
+.asistance-form textarea {
+  border-radius: 7px;
+  border: none;
+  height: 30px;
+  padding: 5px 10px;
+  width: 300px;
+}
+
+.asistance-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.asistance-form textarea {
+  height: auto;
+  resize: vertical;
+}
+
+.send-button {
+  width: 100px;
+  height: 35px;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: var(--text-color-inverse);
+  border: 1px solid var(text-color-inverse);
+  margin-bottom: 100px;
+}
+
+.send-button:hover {
+  box-shadow: 0 0 14px var(--navbar-shallow-color);
+}
+
+/* Desde 1024px */
+@media (min-width: 1024px) { 
+  .asistance-text {
+    padding: 20px 80px;
+  }
+
+  .asistance-form input,
+  .asistance-form textarea {
+    width: 400px;
+  }
+}
+
+/* Hasta 768px */
+ @media (max-width: 768px) { 
+  .asistance {
+    margin: 20px;
+  }
+
+  .title-asistance {
+    font-family: "Cabin Sketch", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 0 30px;
+  }
+
+  .asistance-form input,
+  .asistance-form textarea {
+    width: 300px;
+  }
+
+  .asistance-form textarea {
+    height: auto;
+    resize: vertical;
+  }
+}
+
+/* Hasta 600px */
+ @media (max-width: 600px) { 
+  .asistance-form input,
+  .asistance-form textarea {
+    width: 200px;
+  }
+ }

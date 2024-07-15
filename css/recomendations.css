@@ -1,0 +1,29 @@
+.recomendations {
+  width: 100%;
+}
+
+.recomendations-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Hasta 1024px */
+@media (min-width: 1024px) {
+  .recomendations-text {
+    padding: 20px 100px;
+  }
+}
+
+/* Hasta 768px */
+@media (max-width: 768px) {
+  .title-recomendations {
+    font-family: "Cabin Sketch", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: calc(100% - 60px);
+    padding: 0 30px;
+  }
+}

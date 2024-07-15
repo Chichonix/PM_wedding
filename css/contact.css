@@ -1,0 +1,103 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-title {
+  padding: 20px;
+}
+
+.contact-data {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.name {
+  padding: 0 5px;
+}
+
+.red-text {
+  color: var(--secondary-color);
+
+}
+
+.blue-text {
+  color: var(--third-color);
+
+}
+
+.number {
+  color: var(--text-color);
+}
+
+/* Desde 1024px */
+@media (min-width: 1024px) {
+  .contact-title {
+    padding: 20px 100px;
+  }
+}
+
+/* Hasta 1024px */
+@media (max-width: 1024px) {
+.icon {
+    width: 120px;
+  }
+}
+
+/* Hasta 768px */
+@media (max-width: 768px) {
+  .contact-title {
+    padding: 30px 20px 10px 30px;
+  }
+
+  .icon {
+    width: 70px;
+  }
+
+  .contact-data {
+    padding: 10px 20px 10px 30px;
+    font-size: 20px;
+  }
+
+  .map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .title-contact {
+    font-family: "Cabin Sketch", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 0 30px;
+  }
+
+  .mapa {
+    width: 85%;
+    height: 200px
+  }
+}
+
+
+/* Hasta 600px */
+@media (max-width: 600px) {
+  .contacts {
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 40px;
+  }
+}
