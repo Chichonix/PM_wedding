@@ -48,7 +48,7 @@ function openGmail() {
   var name = document.getElementById('name').value;
   var comments = document.getElementById('comments').value;
 
-  window.location.href = "mailto:patrihor259645@gmail.com?cc=delamamiguelj@gmail.com&subject=Confirmación asisitencia " + name + "&body=" + comments;
+  window.location.href = "mailto:patrihor2596@gmail.com?cc=delamamiguelj@gmail.com&subject=Confirmación asisitencia " + name + "&body=" + comments;
 }
 
 function goWebPhotos() {
