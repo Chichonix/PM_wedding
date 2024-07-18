@@ -17,7 +17,6 @@ function toggleMenu() {
 function changeImage() {
   let i = 0;
   setInterval(() => {
-    console.log(i)
     if (i === 0) {
       carouselImages[carouselImages.length - 1].classList.add('image-hided');
       carouselImages[carouselImages.length - 1].classList.remove('image-showed');
@@ -29,8 +28,6 @@ function changeImage() {
     carouselImages[i].classList.remove('image-hided');
     carouselImages[i].classList.add('image-showed');
 
-    console.log(carouselImages[i].classList);
-
     if (i === carouselImages.length - 1) {
       i = 0;
     } else {
@@ -40,7 +37,6 @@ function changeImage() {
 }
 
 function sendMail() {
-  debugger;
   var link = "https://mail.google.com/mail/?view=cm&fs=1&to=patrihor259645@gmail.com&cc=delamamiguelj@gmail.com"
     + "&su=Confirmación asisitencia " + document.getElementById('name').value
     + "&body=" + document.getElementById('comments').value;
