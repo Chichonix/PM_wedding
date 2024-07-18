@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/map.css" />
     <link rel="stylesheet" href="css/recomendations.css" />
     <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/qr.css" />
     <link rel="stylesheet" href="css/asistance.css" />
     <script defer src="js/app.js"></script>
   </head>
@@ -47,19 +48,22 @@
           <button class="close-menu" aria-label="Cerrar menú">
             <img src="img/close.png" alt="cerrar menú" />
           </button>
-          <li class="item-menu item-menu-medium">
+          <li class="item-menu item-menu-small">
             <a href="#home">¡Nos casamos!</a>
           </li>
           <li class="item-menu item-menu-small">
             <a href="#contact">Contacto</a>
           </li>
-          <li class="item-menu item-menu">
+          <li class="item-menu item-menu-medium">
             <a href="#recomendations">Recomendaciones</a>
           </li>
           <li class="item-menu item-menu-small">
             <a href="#map">Mapa</a>
           </li>
-          <li class="item-menu">
+          <li class="item-menu item-menu-small">
+            <a href="#qr_section">¡Comparte!</a>
+          </li>
+          <li class="item-menu item-menu-small">
             <a href="#assistance">Asistencia</a>
           </li>
         </ul>
@@ -228,6 +232,20 @@
         />
       </div>
     </section>
+    <section id="qr_section" class="qr">
+      <div class="qr-text">
+        <span class="title">COMPARTE TUS FOTOS</span>
+        <p>
+          ¿Has hecho fotos e la boda? Compártelas con todo el mundo para que los
+          que salen puedan descargarlas. ¡Tranqui, sólo duran 30 días! Utiliza
+          el QR o el botón que te redirigirán a la web donde subirlas.
+        </p>
+      </div>
+      <div class="qr-redirect">
+        <img class="qr_image" src="img/qr_photos.png" alt="photo" />
+        <button class="qr-button" onclick="goWebPhotos()">Web de fotos</button>
+      </div>
+    </section>
     <section id="assistance" class="asistance">
       <div class="asistance-text">
         <span class="title">CONFIRMAR ASISTENCIA</span>
@@ -255,8 +273,15 @@
         </div>
         <button
           type="submit"
-          class="send-button"
+          class="send-button button-desktop"
           onclick="sendMail(); return false"
+        >
+          Enviar
+        </button>
+        <button
+          type="submit"
+          class="send-button button-mobile"
+          onclick="openGmail(); return false"
         >
           Enviar
         </button>

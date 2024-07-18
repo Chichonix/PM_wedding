@@ -44,6 +44,17 @@ function sendMail() {
     window.location.href = link;
 }
 
+function openGmail() {
+  var name = document.getElementById('name').value;
+  var comments = document.getElementById('comments').value;
+
+  window.location.href = "mailto:patrihor259645@gmail.com?cc=delamamiguelj@gmail.com&subject=Confirmación asisitencia " + name + "&body=" + comments;
+}
+
+function goWebPhotos() {
+    window.location.href = "https://weduploader.com/upload/ceEJaMBeH4VVFtwT?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=ceEJaMBeH4VVFtwT"
+}
+
 openMenuBtn.addEventListener('click', toggleMenu)
 closeMenuBtn.addEventListener('click', toggleMenu)
 

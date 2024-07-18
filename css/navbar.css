@@ -54,7 +54,7 @@ a {
   list-style: none;
   width: 80%;
   margin: 0;
-  padding: 0 5%;
+  padding: 0 0 0 5%;
 }
 
 .item-menu {
@@ -66,7 +66,7 @@ a {
 }
 
 .item-menu-medium {
-  width: 20%;
+  width: 18%;
 }
 
 .item-menu-small {
@@ -113,19 +113,15 @@ a {
 /* Hasta 1024px */
 @media (max-width: 1024px) {
   .menu {
-    padding: 0 0 0 10%;
-  }
-
-  .item-menu {
-    width: 30%;
+    padding: 0 0 0 3%;
   }
 
   .item-menu-small {
-    width: 10%;
+    width: 12%;
   }
 
   .item-menu a {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .item-selected a,
@@ -157,7 +153,6 @@ a {
     align-items: center;
     justify-content: start;
     background-image: url("../img/fondo_nav_mobile_1.png");
-
     padding: 0;
     overflow-y: auto;
     opacity: 0;
