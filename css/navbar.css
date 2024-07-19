@@ -133,7 +133,7 @@ a {
 }
 
 /* Hasta 950px */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 
   .topnav {
     margin: 0 20px;
