@@ -13,9 +13,8 @@
 }
 
 .start-image img {
-    width: 100%;
-  }
-
+  width: 100%;
+}
 
 .desciption-text {
   padding: 20px;
@@ -29,6 +28,18 @@
 
 .align-center {
   text-align: center;
+}
+
+.taxi-text {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.taxi-text img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
 }
 
 .calendar-image {
